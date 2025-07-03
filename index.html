@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="app-container glass">
+    <header class="app-header">
+      <h1>WeatherNow</h1>
+      <button id="dark-toggle">🌙</button>
+    </header>
+
+    <div class="search-bar">
+      <input type="text" id="search-box" placeholder="Enter city...">
+      <button id="search-btn">🔍</button>
+    </div>
+
+    <div class="weather-card glass">
+      <img id="weather-icon" alt="Weather Icon">
+      <h2 id="city">Loading...</h2>
+      <p id="description"></p>
+      <div class="temps">
+        <div>🌡️ <span id="temp-c"></span>&deg;C</div>
+        <div>🔥 <span id="temp-f"></span>&deg;F</div>
+        <div>❄️ <span id="temp-k"></span>K</div>
+      </div>
+    </div>
+
+    <div class="emergency-section glass">
+      <h3>Emergency Info</h3>
+      <ul>
+        <li>🧣 <strong>Stay warm</strong> during cold waves.</li>
+        <li>⛈️ <strong>Avoid open areas</strong> in thunderstorms.</li>
+        <li>💧 <strong>Stay hydrated</strong> during heat waves.</li>
+        <li>📞 National Emergency: 999</li>    
+      </ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
